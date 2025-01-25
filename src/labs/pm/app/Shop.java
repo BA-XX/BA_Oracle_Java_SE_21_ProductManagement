@@ -23,6 +23,7 @@ import labs.pm.data.ProductManager;
 import labs.pm.data.Rating;
 
 import java.math.BigDecimal;
+import java.util.Locale;
 
 /**
  * {@code Shop} class represents an application that manages Products
@@ -34,7 +35,7 @@ import java.math.BigDecimal;
 public class Shop {
     public static void main(String[] args) {
 
-        ProductManager pm = new ProductManager();
+        ProductManager pm = new ProductManager(Locale.UK);
 
         Product p1 = pm.createProduct(101, "Tea",
                 BigDecimal.valueOf(1.99), Rating.NOT_RATED);
