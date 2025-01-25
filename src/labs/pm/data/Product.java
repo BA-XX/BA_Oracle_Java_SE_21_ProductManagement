@@ -106,7 +106,7 @@ public sealed abstract class Product implements Rateable<Product> permits Food, 
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o instanceof Product product) {
-            return id == product.id && this.name.equals(product.name);
+            return id == product.id;
         }
         return false;
     }
